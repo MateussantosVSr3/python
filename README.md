@@ -1,5 +1,11 @@
 # Simulação de Corrida de Fórmula E
 
+- Mateus dos Santos: 558436
+- Lucas Imparato: 554896
+- André de Maria: 556384
+- Victória Moura: 555474
+- Nickolas Cardoso: 557132
+
 ## Descrição do Projeto
 Este projeto simula uma corrida de Fórmula E, atribui pontos aos pilotos com base em suas posições finais e exibe
 a classificação do campeonato após a corrida. É uma ferramenta útil para visualizar como mudanças aleatórias nas
