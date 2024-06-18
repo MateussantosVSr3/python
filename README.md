@@ -110,4 +110,4 @@ O único módulo necessário para este projeto é o random, que faz parte da bib
 e não requer instalação adicional.
 
 # Exemplo Real
-Na prática este código funcionaria para organizar os pilotos e exibilos ao final da corrida, como uma lista de classificação da corrida que poderia ser implementada em nosso sistema.
+Na prática este código funcionaria para organizar os pilotos e exibi-los ao final da corrida, como uma lista de classificação da corrida que poderia ser implementada em nosso sistema.
