@@ -23,7 +23,7 @@ python nome_do_arquivo.py
 ## Código do Projeto
 O código a seguir implementa a simulação de corrida:
 
-
+´´´ python 
 import random
 
 class Driver:
