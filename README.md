@@ -108,3 +108,6 @@ for driver in drivers:
 # Dependências
 O único módulo necessário para este projeto é o random, que faz parte da biblioteca padrão do Python
 e não requer instalação adicional.
+
+# Exemplo Real
+Na prática este código funcionaria para organizar os pilotos e exibilos ao final da corrida, como uma lista de classificação da corrida que poderia ser implementada em nosso sistema.
