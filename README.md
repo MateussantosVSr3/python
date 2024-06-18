@@ -23,7 +23,7 @@ python nome_do_arquivo.py
 ## Código do Projeto
 O código a seguir implementa a simulação de corrida:
 
-´´´ python 
+```bash
 import random
 
 class Driver:
@@ -34,20 +34,26 @@ class Driver:
 
  def add_points(self, points):
      self.points += points
+```
 
 # Criando os pilotos
+```bash
 driver1 = Driver("Antonio Felix da Costa", "TAG HEUER PORSCHE")
+```
 # (Outros pilotos são criados da mesma forma)
 # Lista dos pilotos
+```bash
 drivers = [driver1, driver2, driver3, ..., driver20]
-
+```
 # Simulando a corrida
+```bash
 def simulate_race():
  results = list(range(1, 21))  # resultado da corrida e como eles foram
  random.shuffle(results)  # deixando os resultados aleatórios
  return results
-
+```
 # Pontuação dos corredores em base nos seus números
+```bash
 def assign_points(results):
  for position, index in enumerate(results):
      if position == 0:
@@ -72,29 +78,33 @@ def assign_points(results):
          drivers[index - 1].add_points(1)  # Décimo
      else:
          drivers[index - 1].add_points(0)  # Demais posições
-
+```
 # Simulação da corrida
+```bash
 race_results = simulate_race()
-
+```
 # Pontuação dos pilotos
+```bash
 assign_points(race_results)
-
+```
 # Organizando com a pontuação
+```bash
 drivers.sort(key=lambda x: x.points, reverse=True)
-
+```
 # Tabela no fim da corrida
+```bash
 print("Formula E Championship Standings after the race:")
 print("{:<20} {:<20} {:<10}".format("Driver", "Team", "Points"))
 for driver in drivers:
  print("{:<20} {:<20} {:<10}".format(driver.name, driver.team, driver.points))
-
+```
 # Explicação do Código
 ## O código é composto pelas seguintes partes:
 
 ### Classe Driver
 A classe Driver representa um piloto e contém atributos para o nome, a equipe e os pontos do piloto.
 Ela também possui um método para adicionar pontos.
-
+```bash
 class Driver:
     def __init__(self, name, team):
         self.name = name
@@ -103,29 +113,30 @@ class Driver:
 
     def add_points(self, points):
         self.points += points
-
+```
 # Criação dos Pilotos
 Instâncias da classe Driver são criadas para representar cada piloto participante da simulação.
 Esses pilotos são armazenados em uma lista chamada drivers.
 
 # Criando os pilotos
+```bash
 driver1 = Driver("Antonio Felix da Costa", "TAG HEUER PORSCHE")
 # (Outros pilotos são criados da mesma forma)
 # Lista dos pilotos
 drivers = [driver1, driver2, driver3, ..., driver20]
-
+```
 # Simulação da Corrida
 A função simulate_race embaralha uma lista de posições para simular os resultados de uma corrida.
-
+```bash
 def simulate_race():
     results = list(range(1, 21))  # resultado da corrida e como eles foram
     random.shuffle(results)  # deixando os resultados aleatórios
     return results
-
+```
 # Atribuição de Pontos
 A função assign_points atribui pontos aos pilotos com base em suas posições na corrida. Os pontos
 são atribuídos de acordo com a posição final de cada piloto.
-
+```bash
 def assign_points(results):
     for position, index in enumerate(results):
         if position == 0:
@@ -150,27 +161,31 @@ def assign_points(results):
             drivers[index - 1].add_points(1)  # Décimo
         else:
             drivers[index - 1].add_points(0)  # Demais posições
-
+```
 
 # Exibição dos Resultados
 Os resultados da corrida são simulados, os pontos são atribuídos e os pilotos são ordenados pela pontuação. A
 classificação final é exibida no console.
 
 # Simulação da corrida
+```bash
 race_results = simulate_race()
-
+```
 # Pontuação dos pilotos
+```bash
 assign_points(race_results)
-
+```
 # Organizando com a pontuação
+```bash
 drivers.sort(key=lambda x: x.points, reverse=True)
-
+```
 # Tabela no fim da corrida
+```bash
 print("Formula E Championship Standings after the race:")
 print("{:<20} {:<20} {:<10}".format("Driver", "Team", "Points"))
 for driver in drivers:
     print("{:<20} {:<20} {:<10}".format(driver.name, driver.team, driver.points))
-
+```
 # Dependências
 O único módulo necessário para este projeto é o random, que faz parte da biblioteca padrão do Python
 e não requer instalação adicional.
